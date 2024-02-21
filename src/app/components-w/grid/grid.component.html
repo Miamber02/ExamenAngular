@@ -1,7 +1,6 @@
-<button (click)="cambiarOrden('>')">Ordenar de mayor a menor</button>
-<button (click)="cambiarOrden('<')">Ordenar de mayor a menor</button>
 
-<div *ngFor="let product of products | order:ordenacion" class="row">
+
+<div *ngFor="let product of products" class="row">
     <div class="col">
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" [src]="product.image" alt="Card image cap">

@@ -12,7 +12,7 @@ export class GridComponent {
 
   ordenacion!:string;
 
-  cambiarOrden(campo: string) {
+  /*cambiarOrden(campo: string) {
     this.cambiarOrden=campo;
-  }
+  } */
 }
