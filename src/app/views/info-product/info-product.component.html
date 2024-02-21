@@ -1,0 +1,19 @@
+<button type="button" class="btn btn-secondary" [routerLink]="[ '/list']">Volver atrás</button>
+
+<div *ngIf='objectProduct' id="divInfoProduct">
+    <h1>País: {{ objectProduct.title }}</h1>
+    <img [src]="objectProduct.image" alt="">
+    <div>
+        <h2>Información</h2>
+        <div class="info">
+            <p>Precio: {{objectProduct.price}} €</p>
+            <p>Descripción: {{ objectProduct.description }}</p>
+            <p>Categoría: {{ objectProduct.category }}</p>
+        </div>
+    </div>
+    <h2>Valoraciones</h2>
+    <div class="traducciones">
+        <p>Puntución: {{ objectProduct.rating.rate }} ⭐</p>
+        <p>Votos: {{ objectProduct.rating.count }} 👥</p>
+    </div>  
+</div>
